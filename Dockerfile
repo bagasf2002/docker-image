@@ -63,7 +63,7 @@ RUN apt update && apt upgrade -y && \
 
 # Copy Python Requirements 
 WORKDIR /usr/src/bagas
-RUN RUN chmod 777 /usr/src/bagas
+RUN chmod 777 /usr/src/bagas
 
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
