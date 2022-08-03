@@ -36,3 +36,5 @@ jobs:
           push: true
           platforms: linux/amd64
           tags: ghcr.io/${{ github.repository }}:${{ env.TAG }}
+          push: true
+          tags: bagasf2002/bandarbagas:bandar05
