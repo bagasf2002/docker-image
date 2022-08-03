@@ -8,13 +8,13 @@ RUN sed -i.bak 's/us-west-2\.ec2\.//' /etc/apt/sources.list
     
 
 RUN apt-get -y update && apt-get -y upgrade && \
-        apt-get install -y software-properties-common && \
-        apt-get install -y python3 python3-pip python3-lxml \
-        debian-keyring debian-archive-keyring \
-        tzdata p7zip-full p7zip-rar xz-utils wget curl pv jq \
-        ffmpeg locales unzip neofetch mediainfo git make g++ gcc automake \
-        libxml2-dev libxslt1-dev \
-        && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
+    apt-get install -y software-properties-common && \
+    apt-get install -y python3 python3-pip python3-lxml \
+    debian-keyring debian-archive-keyring \
+    tzdata p7zip-full p7zip-rar xz-utils wget curl pv jq \
+    ffmpeg locales unzip neofetch mediainfo git make g++ gcc automake \
+    libxml2-dev libxslt1-dev \
+    && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
 
 
 # Copy Python Requirements 
