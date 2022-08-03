@@ -60,8 +60,6 @@ RUN apt update && apt upgrade -y && \
     libopus-dev \
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
 
-# Pypi package Repo upgrade
-RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements 
 WORKDIR /usr/src/bagas
